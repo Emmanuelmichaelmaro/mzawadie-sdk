@@ -1,0 +1,17 @@
+.*
+!.dockerignore
+!.babelrc
+!.circle
+!.gitignore
+!.github
+!.jest
+!.prettierrc
+!.prettierignore
+!.eslintrc
+!.npmignore
+!.plop
+!.storybook
+lib
+node_modules
+*-lock.*
+schema.graphql
