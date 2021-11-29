@@ -2,6 +2,7 @@
     "extends": [
         "airbnb",
         "airbnb-typescript",
+        "airbnb/hooks",
         "plugin:import/errors",
         "plugin:import/typescript",
         "plugin:prettier/recommended"
@@ -21,6 +22,8 @@
         "import/prefer-default-export": "off",
         "import/order": "error",
         "prettier/prettier": ["error"],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
         "react/jsx-one-expression-per-line": "off",
         "react/jsx-props-no-spreading": "off",
         "react/jsx-wrap-multilines": "off",
