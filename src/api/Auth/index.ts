@@ -3,7 +3,7 @@ import { CREDENTIAL_API_EXISTS } from "../../consts";
 import { User } from "../../fragments/gqlTypes/User";
 import { ErrorListener } from "../../helpers";
 import { JobsManager } from "../../jobs";
-import { SaleorState, SaleorStateLoaded } from "../../state";
+import { MzawadieState, MzawadieStateLoaded } from "../../state";
 import { StateItems } from "../../state/types";
 import { Config } from "../../types";
 import { PromiseRunResponse } from "../types";
@@ -43,46 +43,46 @@ export class AuthAPI extends ErrorListener {
      */
     tokenVerifying: boolean;
 
-    private saleorState: SaleorState;
+    private mzawadieState: MzawadieState;
 
     private jobsManager: JobsManager;
 
     // temporary solution, might change in future
     private config: Config;
 
-    constructor(saleorState: SaleorState, jobsManager: JobsManager, config: Config) {
+    constructor(mzawadieState: MzawadieState, jobsManager: JobsManager, config: Config) {
         super();
-        this.saleorState = saleorState;
+        this.mzawadieState = mzawadieState;
         this.jobsManager = jobsManager;
         this.config = config;
 
         this.loaded = false;
         this.tokenRefreshing = false;
-        this.tokenVerifying = !!this.saleorState.signInToken;
+        this.tokenVerifying = !!this.mzawadieState.signInToken;
 
-        this.saleorState.subscribeToChange(StateItems.USER, (user: User | null) => {
+        this.mzawadieState.subscribeToChange(StateItems.USER, (user: User | null) => {
             this.user = user;
             if (this.loaded) {
                 this.authenticated = !!this.user;
             }
         });
-        this.saleorState.subscribeToChange(StateItems.SIGN_IN_TOKEN, (token) => {
+        this.mzawadieState.subscribeToChange(StateItems.SIGN_IN_TOKEN, (token) => {
             this.token = token;
         });
-        this.saleorState.subscribeToChange(StateItems.SIGN_IN_TOKEN_REFRESHING, (tokenRefreshing) => {
+        this.mzawadieState.subscribeToChange(StateItems.SIGN_IN_TOKEN_REFRESHING, (tokenRefreshing) => {
             this.tokenRefreshing = tokenRefreshing;
         });
-        this.saleorState.subscribeToChange(StateItems.SIGN_IN_TOKEN_VERIFYING, (tokenVerifying) => {
+        this.mzawadieState.subscribeToChange(StateItems.SIGN_IN_TOKEN_VERIFYING, (tokenVerifying) => {
             this.tokenVerifying = tokenVerifying;
         });
-        this.saleorState.subscribeToChange(StateItems.LOADED, (loaded: SaleorStateLoaded) => {
+        this.mzawadieState.subscribeToChange(StateItems.LOADED, (loaded: MzawadieStateLoaded) => {
             this.loaded = loaded.user && loaded.signInToken;
             if (this.loaded) {
                 this.authenticated = !!this.user;
             }
         });
 
-        if (!this.saleorState.signInToken && CREDENTIAL_API_EXISTS) {
+        if (!this.mzawadieState.signInToken && CREDENTIAL_API_EXISTS) {
             this.autoSignIn();
         }
     }

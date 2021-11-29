@@ -5,6 +5,7 @@ import { MzawadieManager } from "../../..";
 import { MzawadieContext, MzawadieContextType } from "../../context";
 import { IProps } from "./types";
 
+// eslint-disable-next-line func-names
 const MzawadieProvider: React.FC<IProps> = function ({ apolloConfig, config, children }: IProps) {
     const [context, setContext] = useState<MzawadieContextType | null>(null);
     const [client, setClient] = useState<ApolloClient<any> | null>(null);
@@ -23,6 +24,7 @@ const MzawadieProvider: React.FC<IProps> = function ({ apolloConfig, config, chi
         const manager = new MzawadieManager(config, apolloConfig);
 
         getMzawadieApiAndClient(manager);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (client && context) {
