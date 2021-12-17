@@ -4,6 +4,8 @@
 // This file was automatically generated and should not be edited.
 
 
+import { PermissionEnum } from "./../../../gqlTypes/globalTypes";
+
 // ====================================================
 // GraphQL query operation: UserDetails
 // ====================================================
@@ -78,6 +80,17 @@ export interface UserDetails_me_addresses {
   isDefaultShippingAddress: boolean | null;
 }
 
+export interface UserDetails_me_userPermissions {
+  __typename: "UserPermission";
+  code: PermissionEnum;
+  name: string;
+}
+
+export interface UserDetails_me_avatar {
+  __typename: "Image";
+  url: string;
+}
+
 export interface UserDetails_me {
   __typename: "User";
   id: string;
@@ -88,6 +101,8 @@ export interface UserDetails_me {
   defaultShippingAddress: UserDetails_me_defaultShippingAddress | null;
   defaultBillingAddress: UserDetails_me_defaultBillingAddress | null;
   addresses: (UserDetails_me_addresses | null)[] | null;
+  userPermissions: (UserDetails_me_userPermissions | null)[] | null;
+  avatar: UserDetails_me_avatar | null;
 }
 
 export interface UserDetails {

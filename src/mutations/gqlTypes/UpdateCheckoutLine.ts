@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { CheckoutLineInput, CheckoutErrorCode } from "./../../gqlTypes/globalTypes";
+import { CheckoutLineInput, CheckoutErrorCode } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL mutation operation: UpdateCheckoutLine

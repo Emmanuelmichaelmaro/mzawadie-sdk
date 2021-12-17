@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { AccountErrorCode } from "./../../gqlTypes/globalTypes";
+import { AccountErrorCode, PermissionEnum } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL mutation operation: SetPassword
@@ -87,6 +87,17 @@ export interface SetPassword_setPassword_user_addresses {
   isDefaultShippingAddress: boolean | null;
 }
 
+export interface SetPassword_setPassword_user_userPermissions {
+  __typename: "UserPermission";
+  code: PermissionEnum;
+  name: string;
+}
+
+export interface SetPassword_setPassword_user_avatar {
+  __typename: "Image";
+  url: string;
+}
+
 export interface SetPassword_setPassword_user {
   __typename: "User";
   id: string;
@@ -97,6 +108,8 @@ export interface SetPassword_setPassword_user {
   defaultShippingAddress: SetPassword_setPassword_user_defaultShippingAddress | null;
   defaultBillingAddress: SetPassword_setPassword_user_defaultBillingAddress | null;
   addresses: (SetPassword_setPassword_user_addresses | null)[] | null;
+  userPermissions: (SetPassword_setPassword_user_userPermissions | null)[] | null;
+  avatar: SetPassword_setPassword_user_avatar | null;
 }
 
 export interface SetPassword_setPassword_accountErrors {

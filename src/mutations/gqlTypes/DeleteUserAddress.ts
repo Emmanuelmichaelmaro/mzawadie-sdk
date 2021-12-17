@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { AccountErrorCode } from "./../../gqlTypes/globalTypes";
+import { AccountErrorCode, PermissionEnum } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL mutation operation: DeleteUserAddress
@@ -87,6 +87,17 @@ export interface DeleteUserAddress_accountAddressDelete_user_addresses {
   isDefaultShippingAddress: boolean | null;
 }
 
+export interface DeleteUserAddress_accountAddressDelete_user_userPermissions {
+  __typename: "UserPermission";
+  code: PermissionEnum;
+  name: string;
+}
+
+export interface DeleteUserAddress_accountAddressDelete_user_avatar {
+  __typename: "Image";
+  url: string;
+}
+
 export interface DeleteUserAddress_accountAddressDelete_user {
   __typename: "User";
   id: string;
@@ -97,6 +108,8 @@ export interface DeleteUserAddress_accountAddressDelete_user {
   defaultShippingAddress: DeleteUserAddress_accountAddressDelete_user_defaultShippingAddress | null;
   defaultBillingAddress: DeleteUserAddress_accountAddressDelete_user_defaultBillingAddress | null;
   addresses: (DeleteUserAddress_accountAddressDelete_user_addresses | null)[] | null;
+  userPermissions: (DeleteUserAddress_accountAddressDelete_user_userPermissions | null)[] | null;
+  avatar: DeleteUserAddress_accountAddressDelete_user_avatar | null;
 }
 
 export interface DeleteUserAddress_accountAddressDelete {

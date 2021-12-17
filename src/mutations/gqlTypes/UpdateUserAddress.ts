@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { AddressInput, AccountErrorCode } from "./../../gqlTypes/globalTypes";
+import { AddressInput, AccountErrorCode, PermissionEnum } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL mutation operation: UpdateUserAddress
@@ -87,6 +87,17 @@ export interface UpdateUserAddress_accountAddressUpdate_user_addresses {
   isDefaultShippingAddress: boolean | null;
 }
 
+export interface UpdateUserAddress_accountAddressUpdate_user_userPermissions {
+  __typename: "UserPermission";
+  code: PermissionEnum;
+  name: string;
+}
+
+export interface UpdateUserAddress_accountAddressUpdate_user_avatar {
+  __typename: "Image";
+  url: string;
+}
+
 export interface UpdateUserAddress_accountAddressUpdate_user {
   __typename: "User";
   id: string;
@@ -97,6 +108,8 @@ export interface UpdateUserAddress_accountAddressUpdate_user {
   defaultShippingAddress: UpdateUserAddress_accountAddressUpdate_user_defaultShippingAddress | null;
   defaultBillingAddress: UpdateUserAddress_accountAddressUpdate_user_defaultBillingAddress | null;
   addresses: (UpdateUserAddress_accountAddressUpdate_user_addresses | null)[] | null;
+  userPermissions: (UpdateUserAddress_accountAddressUpdate_user_userPermissions | null)[] | null;
+  avatar: UpdateUserAddress_accountAddressUpdate_user_avatar | null;
 }
 
 export interface UpdateUserAddress_accountAddressUpdate {

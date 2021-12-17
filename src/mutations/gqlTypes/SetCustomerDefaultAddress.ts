@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { AddressTypeEnum, AccountErrorCode } from "./../../gqlTypes/globalTypes";
+import { AddressTypeEnum, AccountErrorCode, PermissionEnum } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL mutation operation: SetCustomerDefaultAddress
@@ -87,6 +87,17 @@ export interface SetCustomerDefaultAddress_accountSetDefaultAddress_user_address
   isDefaultShippingAddress: boolean | null;
 }
 
+export interface SetCustomerDefaultAddress_accountSetDefaultAddress_user_userPermissions {
+  __typename: "UserPermission";
+  code: PermissionEnum;
+  name: string;
+}
+
+export interface SetCustomerDefaultAddress_accountSetDefaultAddress_user_avatar {
+  __typename: "Image";
+  url: string;
+}
+
 export interface SetCustomerDefaultAddress_accountSetDefaultAddress_user {
   __typename: "User";
   id: string;
@@ -97,6 +108,8 @@ export interface SetCustomerDefaultAddress_accountSetDefaultAddress_user {
   defaultShippingAddress: SetCustomerDefaultAddress_accountSetDefaultAddress_user_defaultShippingAddress | null;
   defaultBillingAddress: SetCustomerDefaultAddress_accountSetDefaultAddress_user_defaultBillingAddress | null;
   addresses: (SetCustomerDefaultAddress_accountSetDefaultAddress_user_addresses | null)[] | null;
+  userPermissions: (SetCustomerDefaultAddress_accountSetDefaultAddress_user_userPermissions | null)[] | null;
+  avatar: SetCustomerDefaultAddress_accountSetDefaultAddress_user_avatar | null;
 }
 
 export interface SetCustomerDefaultAddress_accountSetDefaultAddress {

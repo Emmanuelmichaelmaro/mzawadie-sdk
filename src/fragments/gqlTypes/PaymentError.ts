@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { PaymentErrorCode } from "./../../gqlTypes/globalTypes";
+import { PaymentErrorCode } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL fragment: PaymentError

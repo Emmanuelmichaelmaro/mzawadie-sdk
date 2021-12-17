@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { CollectionSortingInput, CollectionFilterInput } from "./../../gqlTypes/globalTypes";
+import { CollectionSortingInput, CollectionFilterInput } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL query operation: CollectionList

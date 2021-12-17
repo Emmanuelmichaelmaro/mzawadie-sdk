@@ -19,5 +19,12 @@ export const userFragment = gql`
         addresses {
             ...Address
         }
+        userPermissions {
+            code
+            name
+        }
+        avatar {
+            url
+        }
     }
 `;

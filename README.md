@@ -9,12 +9,12 @@ This package contains all queries and mutations that are used in our sample stor
 - [Features](#features)
 - [Local development](#local-development)
 
-## Setup (PACKAGE CURRENTLY NOT RELEASED TO NPM)
+## Setup
 
 ### Custom implementation
 
 ```bash
-npm install @mzawadie/sdk
+npm install @mzawadie/sdk @apollo/client graphql
 ```
 
 Create new mzawadie client by using our built-in pre-configured apollo client:
@@ -79,6 +79,45 @@ ReactDOM.render(
 )
 ```
 
+### Using with NodeJS and other frameworks
+
+```bash
+npm install @mzawadie/sdk @apollo/client graphql
+```
+
+Then use `createMzawadieClient` to get Mzawadie api methods and internal config variables like channel and Apollo client.
+
+```tsx
+import { createMzawadieClient } from "@mzawadie/sdk";
+
+const client = createMzawadieClient({
+    apiUrl: "<MZAWADIE_GRAPHQL_URL>",
+    channel: "<CHANNEL>",
+});
+
+const { auth, config, _internal } = client;
+```
+
+Finally, API methods can be used:
+
+```tsx
+const { data } = await auth.login({
+    email: "admin@example.com",
+    password: "admin",
+});
+
+if (data.tokenCreate.errors.length > 0) {
+    /**
+     * Unable to sign in.
+     **/
+} else if (data) {
+    /**
+     * User signed in successfully.
+     **/
+    const userData = api.auth.tokenCreate.user;
+}
+```
+
 ## Features
 
 We provide an API with methods and fields, performing one, scoped type of work. You may access them straight from `MzawadieAPI` or use React hooks, depending on [which setup do you select](#setup).
@@ -109,3 +148,61 @@ webpack is configured to always resolve `react` to `./node_modules/react`. It ma
 seem redundant for the most use cases, but helps in sdk's local development, because
 it overcomes `npm`'s limitations regarding peer dependencies hoisting, explicitly
 telling webpack to always have one and only copy of `react`.
+
+### Configuration
+
+Set environment variables:
+
+```bash
+export API_URI=https://your.mzawadie.instance.com/graphql/
+export TEST_AUTH_EMAIL=admin@example.com
+export TEST_AUTH_PASSWORD=admin
+```
+
+### Development
+
+1. Download repository
+2. Install dependencies: `npm i`
+3. Now you can start files watcher with: `npm run start`
+
+### Production build
+
+```bash
+npm run build
+```
+
+### Tests
+
+Tests are located at `/test` directory. To start the test suite:
+
+```bash
+npm run test
+```
+
+All communication with API is prerecorded using [Polly.JS](https://netflix.github.io/pollyjs/#/README). Unless requests changed or code executes new ones, no requests to API will be made.
+
+Changes in `/recordings` directory should be reviewed before committing to make sure that changes in communication are intentional.
+
+### Code quality
+
+The project has configured Prettier and ESLint. To check your code:
+
+```bash
+npm run lint
+```
+
+### Fetch current GraphQL schema
+
+```bash
+npm run download-schema
+```
+
+Command will overwrite `introspection.json` with server schema, based on `API_URL` variable.
+
+### Updating TS types
+
+GraphQL Code Generator is an automatic tool that converts schema to TS types. After changing schema file run:
+
+```bash
+npm run build-types
+```

@@ -4,7 +4,7 @@
 // This file was automatically generated and should not be edited.
 
 
-import { CountryCode, VariantAttributeScope } from "./../../gqlTypes/globalTypes";
+import { CountryCode, VariantAttributeScope } from "./../../../gqlTypes/globalTypes";
 
 // ====================================================
 // GraphQL query operation: ProductDetails
