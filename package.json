@@ -1,11 +1,15 @@
 {
     "name": "@mzawadie/sdk",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "This package contains all queries and mutations that are used in our sample storefront. It can be used for semi-custom or fully-custom (with ability to extend existing queries) storefront solutions.",
     "main": "./lib/index.js",
     "type": "commonjs",
     "typings": "./lib/index.d.ts",
     "license": "BSD-3-Clause",
+    "files": [
+        "lib",
+        "src"
+    ],
     "engines": {
         "node": ">=12.16.3"
     },
@@ -14,9 +18,7 @@
         "sdk",
         "storefront",
         "shop",
-        "typescript",
-        "apollo",
-        "graphql"
+        "typescript"
     ],
     "author": "Emmanuel Maro <emmanuelmichaelmaro733@gmail.com>",
     "repository": {
@@ -118,9 +120,9 @@
         "typescript": "^4.4.4"
     },
     "peerDependencies": {
-        "graphql": "^15.7.2",
-        "@apollo/client": "^3.4.17",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "@apollo/client": "^3.3.19",
+        "graphql": "^15.5.0",
+        "react": "^16.8.0 || ^17.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0"
     }
 }

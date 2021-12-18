@@ -12,6 +12,10 @@
 !.plop
 !.storybook
 lib
+*.log
+.DS_Store
 node_modules
+.env
+.envrc
 *-lock.*
 schema.graphql
