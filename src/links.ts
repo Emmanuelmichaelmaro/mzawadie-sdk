@@ -1,3 +1,4 @@
+import { ApolloLink } from "@apollo/client";
 import { BatchHttpLink } from "@apollo/client/link/batch-http";
 import { RetryLink } from "@apollo/client/link/retry";
 import { onError } from "@apollo/link-error";
@@ -21,6 +22,14 @@ interface MzawadieLinksConfig {
  */
 export const createMzawadieLinks = ({ apiUrl, tokenExpirationCallback }: MzawadieLinksConfig) => {
     const invalidTokenLink = invalidTokenLinkWithTokenHandler(tokenExpirationCallback);
+    const logLink = new ApolloLink((operation, forward) => {
+        console.info("request", operation.getContext());
+
+        return forward(operation).map((result) => {
+            console.info("response", operation.getContext());
+            return result;
+        });
+    });
     const errorLink = onError(({ graphQLErrors, networkError }) => {
         if (graphQLErrors)
             graphQLErrors.forEach(({ message, locations, path }) =>
@@ -28,12 +37,14 @@ export const createMzawadieLinks = ({ apiUrl, tokenExpirationCallback }: Mzawadi
                     `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`
                 )
             );
-        if (networkError)
-            console.log(`[Network error]: ${networkError}. Backend is unreachable. Is it running?`);
+        if (networkError) console.log(`[Network error]: Backend is unreachable. Is it running?`);
     });
+
+    console.log(apiUrl);
 
     return [
         errorLink,
+        logLink,
         invalidTokenLink,
         authLink,
         new RetryLink(),
