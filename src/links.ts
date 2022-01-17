@@ -1,5 +1,4 @@
-import { ApolloLink } from "@apollo/client";
-import { BatchHttpLink } from "@apollo/client/link/batch-http";
+import { ApolloLink, HttpLink } from "@apollo/client";
 import { RetryLink } from "@apollo/client/link/retry";
 import { onError } from "@apollo/link-error";
 
@@ -23,10 +22,7 @@ interface MzawadieLinksConfig {
 export const createMzawadieLinks = ({ apiUrl, tokenExpirationCallback }: MzawadieLinksConfig) => {
     const invalidTokenLink = invalidTokenLinkWithTokenHandler(tokenExpirationCallback);
     const logLink = new ApolloLink((operation, forward) => {
-        console.info("request", operation.getContext());
-
         return forward(operation).map((result) => {
-            console.info("response", operation.getContext());
             return result;
         });
     });
@@ -40,14 +36,12 @@ export const createMzawadieLinks = ({ apiUrl, tokenExpirationCallback }: Mzawadi
         if (networkError) console.log(`[Network error]: Backend is unreachable. Is it running?`);
     });
 
-    console.log(apiUrl);
-
     return [
         errorLink,
         logLink,
         invalidTokenLink,
         authLink,
         new RetryLink(),
-        new BatchHttpLink({ credentials: "include", uri: apiUrl }),
+        new HttpLink({ credentials: "include", uri: apiUrl }),
     ];
 };
