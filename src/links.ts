@@ -42,6 +42,6 @@ export const createMzawadieLinks = ({ apiUrl, tokenExpirationCallback }: Mzawadi
         invalidTokenLink,
         authLink,
         new RetryLink(),
-        new HttpLink({ credentials: "include", uri: apiUrl }),
+        new HttpLink({ credentials: "include", fetchOptions: { mode: "cors" }, uri: apiUrl }),
     ];
 };
