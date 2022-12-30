@@ -6,6 +6,7 @@ export interface JobErrorResponse<T> {
     type?: T;
 }
 
+// @ts-ignore
 export interface JobRunResponse<D, F = undefined> {
     data?: any;
     dataError?: JobErrorResponse<D>;

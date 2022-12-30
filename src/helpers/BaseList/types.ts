@@ -1,6 +1,6 @@
 import { ApolloQueryResult } from "@apollo/client";
 
-import { PageInfo } from "../../fragments/gqlTypes/PageInfo";
+import { PageInfo } from "../../apollo/fragments/gqlTypes/PageInfo";
 
 export type GetBaseListResult<TQuery> =
     | Promise<ApolloQueryResult<TQuery>>

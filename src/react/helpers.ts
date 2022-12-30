@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MzawadieAPI } from "../api";
-import { ConfigInput } from "../types";
+import { ConfigInput } from "../apollo";
 import { MzawadieContext } from "./context";
 
 export function useMzawadieClient(): MzawadieAPI {

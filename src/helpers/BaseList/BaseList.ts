@@ -1,6 +1,6 @@
 import { ApolloClient } from "@apollo/client";
 
-import { PageInfo } from "../../fragments/gqlTypes/PageInfo";
+import { PageInfo } from "../../apollo/fragments/gqlTypes/PageInfo";
 import {
     GetBaseList,
     MapQueryData,
@@ -102,6 +102,7 @@ abstract class BaseList<TQuery, TObject, TVariables extends BaseListVariables> {
                 after: this.pageInfo?.endCursor,
                 first: this.variables.first,
             });
+
             const result = await this.current;
 
             this.current = null;

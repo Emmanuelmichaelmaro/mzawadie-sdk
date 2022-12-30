@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ConfigInput, ApolloConfigInput } from "../../../types";
+import { ConfigInput, ApolloConfigInput } from "../../../apollo";
 
 export interface IProps {
     children: React.ReactElement | React.ReactNode;

@@ -1,4 +1,4 @@
-import { ApolloClientManager } from "../../data/ApolloClientManager";
+import { ApolloClientManager } from "../../apollo/ApolloClientManager";
 import { LocalStorageHandler } from "../../helpers/LocalStorageHandler";
 import { QueuedJobsHandler } from "../QueuedJobsHandler";
 

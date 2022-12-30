@@ -1,11 +1,11 @@
 import { ApolloClient } from "@apollo/client";
 
+import { Config } from "../apollo";
+import { ApolloClientManager } from "../apollo/ApolloClientManager";
+import { MzawadieState } from "../core/state";
 import { LocalStorageManager } from "../data";
-import { ApolloClientManager } from "../data/ApolloClientManager";
 import { LocalStorageHandler } from "../helpers/LocalStorageHandler";
 import { JobsManager } from "../jobs";
-import { MzawadieState } from "../state";
-import { Config } from "../types";
 import APIProxy from "./APIProxy";
 import { AuthAPI } from "./Auth";
 import { MzawadieCartAPI } from "./Cart";

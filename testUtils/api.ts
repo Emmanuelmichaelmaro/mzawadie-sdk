@@ -1,23 +1,56 @@
+// @ts-nocheck
 import { BatchHttpLink } from "@apollo/client/link/batch-http";
 import { RetryLink } from "@apollo/client/link/retry";
 import NodeHttpAdapter from "@pollyjs/adapter-node-http";
-import { Polly } from "@pollyjs/core";
+import { Polly, PollyServer } from "@pollyjs/core";
 import FSPersister from "@pollyjs/persister-fs";
 import fetch from "node-fetch";
 import * as path from "path";
-import { setupPolly } from "setup-polly-jest";
+import { Context, setupPolly } from "setup-polly-jest";
 
 import {
+    API_CHANNEL,
+    API_URI,
     authLink,
+    createApolloClient2,
     createMzawadieCache,
     createMzawadieClient,
     invalidTokenLinkWithTokenHandler,
+    MzawadieClient
 } from "../src";
+import { removeBlacklistedVariables } from "./utils";
 
+/*
+  Register the adapters and persisters we want to use. This way all future
+  polly instances can access them by name.
+*/
 Polly.register(NodeHttpAdapter);
 Polly.register(FSPersister);
 
-export function setupRecording() {
+export const setupPollyMiddleware = (server: PollyServer): void => {
+    server.any().on("beforePersist", (_, recording) => {
+        const requestJson = JSON.parse(recording.request.postData.text);
+        const responseHeaders = recording.response.headers.filter(
+            (el: Record<string, string>) => !["authorization-bearer", "set-cookie"].includes(el.name)
+        );
+        const requestHeaders = recording.request.headers.filter(
+            (el: Record<string, string>) => !["authorization-bearer", "set-cookie"].includes(el.name)
+        );
+
+        const filteredRequestJson = removeBlacklistedVariables(requestJson);
+
+        const responseJson = JSON.parse(recording.response.content.text);
+        const filteredResponseJson = removeBlacklistedVariables(responseJson);
+
+        recording.request.postData.text = JSON.stringify(filteredRequestJson);
+        recording.request.headers = requestHeaders;
+        recording.response.cookies = [];
+        recording.response.content.text = JSON.stringify(filteredResponseJson);
+        recording.response.headers = responseHeaders;
+    });
+};
+
+export const setupRecording = (): Context =>
     setupPolly({
         adapterOptions: {
             fetch: {
@@ -37,6 +70,12 @@ export function setupRecording() {
                 query: false,
                 username: false,
             },
+            body(body): string {
+                const json = JSON.parse(body);
+                const filteredJson = removeBlacklistedVariables(json);
+
+                return JSON.stringify(filteredJson);
+            },
         },
         persister: "fs",
         persisterOptions: {
@@ -46,12 +85,14 @@ export function setupRecording() {
         },
         recordIfMissing: true,
     });
-}
 
-export async function setupAPI() {
+export const setupAPI = async () => {
     const cache = await createMzawadieCache({ persistCache: true });
-    const apiUrl = process.env.NEXT_PUBLIC_API_URI || "https://demo.saleor.io/";
+
+    const apiUrl = API_URI;
+
     const invalidTokenLink = invalidTokenLinkWithTokenHandler(() => null);
+
     const links = [
         invalidTokenLink,
         authLink,
@@ -62,7 +103,15 @@ export async function setupAPI() {
             uri: apiUrl,
         }),
     ];
-    const client = createMzawadieClient(cache, links);
+
+    const client = createApolloClient2(cache, links);
 
     return { apiUrl, cache, client };
-}
+};
+
+export const setupMzawadieClient = (): MzawadieClient => {
+    return createMzawadieClient({
+        apiUrl: API_URI,
+        channel: API_CHANNEL,
+    });
+};

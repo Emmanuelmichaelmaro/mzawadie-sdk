@@ -1,10 +1,10 @@
-import { BaseCollection } from "../../fragments/gqlTypes/BaseCollection";
-import BaseList, { GetPageInfo, GetTotalCount, MapQueryData } from "../../helpers/BaseList";
-import { collections } from "../../queries/collections";
+import { BaseCollection } from "../../apollo/fragments/gqlTypes/BaseCollection";
+import { collections } from "../../apollo/queries/collections";
 import {
     CollectionList as CollectionListQuery,
     CollectionListVariables,
-} from "../../queries/gqlTypes/CollectionList";
+} from "../../apollo/queries/gqlTypes/CollectionList";
+import BaseList, { GetPageInfo, GetTotalCount, MapQueryData } from "../../helpers/BaseList";
 
 export class CollectionList extends BaseList<
     CollectionListQuery,

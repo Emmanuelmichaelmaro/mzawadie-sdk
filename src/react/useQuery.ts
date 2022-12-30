@@ -3,7 +3,7 @@ import React from "react";
 
 import { useAuth, useMzawadieClient } from "..";
 import APIProxy from "../api/APIProxy";
-import { RequireAtLeastOne } from "../tsHelpers";
+import { RequireAtLeastOne } from "../core/tsHelpers";
 import { ApolloErrorWithUserInput, Options, Variables, WatchQueryReturnData } from "./types";
 
 type OmittedOptions<T extends keyof APIProxy> = Omit<

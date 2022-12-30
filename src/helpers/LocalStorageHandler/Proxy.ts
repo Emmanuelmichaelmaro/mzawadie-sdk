@@ -1,4 +1,4 @@
-import { LOCAL_STORAGE_EXISTS } from "../../consts";
+import { LOCAL_STORAGE_EXISTS } from "../../core";
 import { NamedObservable } from "../NamedObservable";
 import { LocalStorageItems, LocalStorageEvents } from "./types";
 

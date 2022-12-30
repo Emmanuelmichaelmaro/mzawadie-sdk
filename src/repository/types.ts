@@ -4,7 +4,7 @@ import {
     Checkout_lines_variant_attributes,
     Checkout_lines_variant_pricing,
     Checkout_lines_variant_product,
-} from "../fragments/gqlTypes/Checkout";
+} from "../apollo/fragments/gqlTypes/Checkout";
 
 export enum LocalStorageItems {
     JOB_QUEUE_CHECKOUT = "job_queueCheckout",

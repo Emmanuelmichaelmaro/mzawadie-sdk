@@ -1,17 +1,17 @@
 import { ApolloClient } from "@apollo/client";
 
-import { BaseCategory } from "../../fragments/gqlTypes/BaseCategory";
-import { CategoryDetails as CategoryDetailsFragment } from "../../fragments/gqlTypes/CategoryDetails";
-import { CategoryAncestorsListVariables } from "../../queries/gqlTypes/CategoryAncestorsList";
-import { CategoryChildrenListVariables } from "../../queries/gqlTypes/CategoryChildrenList";
+import { BaseCategory } from "../../apollo/fragments/gqlTypes/BaseCategory";
+import { CategoryDetails as CategoryDetailsFragment } from "../../apollo/fragments/gqlTypes/CategoryDetails";
+import { CategoryAncestorsListVariables } from "../../apollo/queries/gqlTypes/CategoryAncestorsList";
+import { CategoryChildrenListVariables } from "../../apollo/queries/gqlTypes/CategoryChildrenList";
 import {
     CategoryDetails as CategoryDetailsQuery,
     CategoryDetailsVariables,
-} from "../../queries/gqlTypes/CategoryDetails";
+} from "../../apollo/queries/gqlTypes/CategoryDetails";
 import {
     CategoryList as CategoryListQuery,
     CategoryListVariables,
-} from "../../queries/gqlTypes/CategoryList";
+} from "../../apollo/queries/gqlTypes/CategoryList";
 import { WithDetails, WithList } from "../types";
 import { CategoryAncestorsList } from "./CategoryAncestorsList";
 import { CategoryChildrenList } from "./CategoryChildrenList";

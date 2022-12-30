@@ -1,12 +1,12 @@
+import { Config } from "../../apollo";
+import { ApolloClientManager } from "../../apollo/ApolloClientManager";
+import { MzawadieState, MzawadieStateLoaded } from "../../core/state";
+import { IMzawadieStateSummeryPrices, StateItems } from "../../core/state/types";
 import { LocalStorageManager } from "../../data";
-import { ApolloClientManager } from "../../data/ApolloClientManager";
 import { ErrorListener } from "../../helpers";
 import { ICheckoutModel } from "../../helpers/LocalStorageHandler";
 import { JobsManager } from "../../jobs";
 import { ErrorCartTypes } from "../../jobs/Cart";
-import { MzawadieState, MzawadieStateLoaded } from "../../state";
-import { IMzawadieStateSummeryPrices, StateItems } from "../../state/types";
-import { Config } from "../../types";
 import { IDiscount, IItems, IShippingPrice, ISubtotalPrice, ITotalPrice } from "./types";
 import { sortCheckoutLines } from "./utils";
 

@@ -34,10 +34,11 @@ We provide a custom hook per each query that have near identical API to `react-a
 In your root file:
 
 ```
-import { MzawadieProvider } from '@mzawadie/sdk'
+import { MzawadieProvider, createMzawadieClient, useAuth, useAuthState } from '@mzawadie/sdk'
 
 const App = () => {
-    const { authenticated, user, signIn } = useAuth();
+    const { login } = useAuth();
+    const { authenticated, user } = useAuthState();
     
     const handleSignIn = async () => {
         const { data, dataError } = await signIn("admin@example.com", "admin");
@@ -56,13 +57,12 @@ const App = () => {
     if (authenticated && user) {
         return <span>Signed in as {user.firstName}</span>;
     } else {
-        return <button onClick={handleSignIn}>Sign in</button>;
+        return <button onClick={handleSignIn}>Sign In</button>;
     }
 };
 
-const rootElement = document.getElementById('root')
-
 const config = { apiUrl: "http://localhost:8000/graphql/", channel: "" };
+
 const apolloConfig = {
     /* 
         Optional custom Apollo client config.
@@ -71,8 +71,15 @@ const apolloConfig = {
     */
 };
 
+const client = createMzawadieClient({
+    apiUrl: "<MZAWADIE_GRAPHQL_URL>",
+    channel: "<CHANNEL>",
+});
+
+const rootElement = document.getElementById('root')
+
 ReactDOM.render(
-    <MzawadieProvider config={config} apolloConfig={apolloConfig}>
+    <MzawadieProvider client={client}>
         <App />
     </MzawadieProvider>,
     rootElement
@@ -95,7 +102,7 @@ const client = createMzawadieClient({
     channel: "<CHANNEL>",
 });
 
-const { auth, config, _internal } = client;
+const { auth, user, config, _internal } = client;
 ```
 
 Finally, API methods can be used:
@@ -120,10 +127,11 @@ if (data.tokenCreate.errors.length > 0) {
 
 ## Features
 
-We provide an API with methods and fields, performing one, scoped type of work. You may access them straight from `MzawadieAPI` or use React hooks, depending on [which setup do you select](#setup).
+We provide an API with methods and fields, performing one, scoped type of work. You may access them straight from `MzawadieAPI` or `createMzawadieClient()` or use React hooks, depending on [which setup do you select](#setup).
 
 | API object              | React hook                                                                                             | Description                                                                     |
 | :---------------------- | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
+| `MzawadieAPI.getState`    | `useAuthState()`                                                                                       | Returns current SDK state: user, authenticated and token.                       |
 | `MzawadieAPI.auth`        | `useAuth()`                                                                                            | Handles user authentication and stores data about the currently signed in user. |
 | `MzawadieAPI.cart`        | `useCart()`                                                                                            | Collects products to cart and calculates their prices.                          |
 | `MzawadieAPI.checkout`    | `useCheckout()`                                                                                        | Uses cart and handles the whole checkout process.                               |
@@ -197,7 +205,7 @@ npm run lint
 npm run download-schema
 ```
 
-Command will overwrite `introspection.json` with server schema, based on `API_URL` variable.
+Command will overwrite `schema.graphql` with server schema, based on `API_URL` variable.
 
 ### Updating TS types
 

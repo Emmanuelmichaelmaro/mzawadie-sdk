@@ -1,5 +1,5 @@
+import { MzawadieState } from "../../core/state";
 import { LocalStorageHandler } from "../../helpers/LocalStorageHandler";
-import { MzawadieState } from "../../state";
 
 export class LocalStorageManager {
     private handler: LocalStorageHandler;

@@ -2,7 +2,7 @@ import { DataProxy, FetchResult } from "@apollo/client";
 import React from "react";
 
 import APIProxy from "../api/APIProxy";
-import { MutationOptions } from "../mutations";
+import { MutationOptions } from "../apollo/mutations";
 import { useMzawadieClient } from "./helpers";
 import { ApolloErrorWithUserInput, Options, ReturnData, Variables } from "./types";
 

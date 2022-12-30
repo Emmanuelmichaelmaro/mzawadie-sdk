@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MzawadieAPI } from "../api";
-import { ConfigInput } from "../types";
+import { ConfigInput } from "../apollo";
 
 export type MzawadieContextType = { api: MzawadieAPI; config: ConfigInput };
 

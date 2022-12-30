@@ -1,6 +1,7 @@
+// @ts-nocheck
 import { DataErrorAuthTypes } from "../../api/Auth/types";
 import { DataErrorCheckoutTypes } from "../../api/Checkout/types";
-import { ApolloClientManager } from "../../data/ApolloClientManager";
+import { ApolloClientManager } from "../../apollo/ApolloClientManager";
 import { LocalStorageHandler } from "../../helpers/LocalStorageHandler";
 import { JobsHandler } from "../JobsHandler";
 import { JobRunResponse } from "../types";
@@ -8,6 +9,7 @@ import { JobRunResponse } from "../types";
 export enum AuthJobsEvents {
     SIGN_IN_TOKEN_REFRESHING,
 }
+
 export interface AuthJobsEventsValues {
     [AuthJobsEvents.SIGN_IN_TOKEN_REFRESHING]: boolean;
 }

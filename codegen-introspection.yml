@@ -1,0 +1,8 @@
+overwrite: true
+schema: "https://demo.saleor.io/graphql/"
+generates:
+    introspection.json:
+        plugins:
+            - introspection
+        config:
+            minify: false

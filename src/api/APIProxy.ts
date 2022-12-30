@@ -1,17 +1,26 @@
+// @ts-nocheck
 import { ApolloClient, ApolloError, ObservableQuery, WatchQueryOptions } from "@apollo/client";
 import { GraphQLError } from "graphql";
 
-import { getAuthToken } from "../auth";
-import { WINDOW_EXISTS } from "../consts";
-import { MUTATIONS } from "../mutations";
-import { PasswordChange } from "../mutations/gqlTypes/PasswordChange";
-import { SetPassword } from "../mutations/gqlTypes/SetPassword";
-import { QUERIES } from "../queries";
-import { OrderByToken } from "../queries/gqlTypes/OrderByToken";
-import { UserOrderByToken } from "../queries/gqlTypes/UserOrderByToken";
-import { RequireAtLeastOne } from "../tsHelpers";
-import { InferOptions, MapFn, QueryShape, WatchMapFn, WatchQueryData } from "../types";
-import { getErrorsFromData, getMappedData, isDataEmpty, mergeEdges } from "../utils";
+import {
+    getErrorsFromData,
+    getMappedData,
+    InferOptions,
+    isDataEmpty,
+    MapFn,
+    mergeEdges,
+    QueryShape,
+    WatchMapFn,
+    WatchQueryData,
+} from "../apollo";
+import { MUTATIONS } from "../apollo/mutations";
+import { PasswordChange } from "../apollo/mutations/gqlTypes/PasswordChange";
+import { SetPassword } from "../apollo/mutations/gqlTypes/SetPassword";
+import { QUERIES } from "../apollo/queries";
+import { OrderByToken } from "../apollo/queries/gqlTypes/OrderByToken";
+import { UserOrderByToken } from "../apollo/queries/gqlTypes/UserOrderByToken";
+import { getAuthToken, WINDOW_EXISTS } from "../core";
+import { RequireAtLeastOne } from "../core/tsHelpers";
 import { SetPasswordChange, SetPasswordResult } from "./types";
 
 const handleDataErrors = <T extends QueryShape, TData>(
@@ -90,7 +99,7 @@ class APIProxy {
         (data) => data!.accountAddressCreate
     );
 
-    setUpdateuserAddress = this.fireQuery(
+    setUpdateUserAddress = this.fireQuery(
         MUTATIONS.UpdateUserAddress,
         (data) => data!.accountAddressUpdate
     );

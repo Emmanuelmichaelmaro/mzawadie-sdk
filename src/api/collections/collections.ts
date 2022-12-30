@@ -1,16 +1,16 @@
 import { ApolloClient } from "@apollo/client";
 
-import { BaseCollection } from "../../fragments/gqlTypes/BaseCollection";
-import { CollectionDetails as CollectionDetailsFragment } from "../../fragments/gqlTypes/CollectionDetails";
+import { ConfigInput } from "../../apollo";
+import { BaseCollection } from "../../apollo/fragments/gqlTypes/BaseCollection";
+import { CollectionDetails as CollectionDetailsFragment } from "../../apollo/fragments/gqlTypes/CollectionDetails";
 import {
     CollectionDetails as CollectionDetailsQuery,
     CollectionDetailsVariables,
-} from "../../queries/gqlTypes/CollectionDetails";
+} from "../../apollo/queries/gqlTypes/CollectionDetails";
 import {
     CollectionList as CollectionListQuery,
     CollectionListVariables,
-} from "../../queries/gqlTypes/CollectionList";
-import { ConfigInput } from "../../types";
+} from "../../apollo/queries/gqlTypes/CollectionList";
 import { WithDetails, WithList } from "../types";
 import { CollectionDetails } from "./CollectionDetails";
 import { CollectionList } from "./CollectionList";

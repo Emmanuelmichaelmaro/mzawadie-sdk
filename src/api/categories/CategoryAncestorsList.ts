@@ -1,10 +1,10 @@
-import { BaseCategory } from "../../fragments/gqlTypes/BaseCategory";
-import BaseList, { GetPageInfo, GetTotalCount, MapQueryData } from "../../helpers/BaseList";
-import { categoryAncestorsList } from "../../queries/category";
+import { BaseCategory } from "../../apollo/fragments/gqlTypes/BaseCategory";
+import { categoryAncestorsList } from "../../apollo/queries/category";
 import {
     CategoryAncestorsList as CategoryAncestorsListQuery,
     CategoryAncestorsListVariables,
-} from "../../queries/gqlTypes/CategoryAncestorsList";
+} from "../../apollo/queries/gqlTypes/CategoryAncestorsList";
+import BaseList, { GetPageInfo, GetTotalCount, MapQueryData } from "../../helpers/BaseList";
 
 export class CategoryAncestorsList extends BaseList<
     CategoryAncestorsListQuery,

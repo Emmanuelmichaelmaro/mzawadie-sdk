@@ -6,7 +6,7 @@ import { MzawadieContext, MzawadieContextType } from "../../context";
 import { IProps } from "./types";
 
 // eslint-disable-next-line func-names
-const MzawadieProvider: React.FC<IProps> = function ({ apolloConfig, config, children }: IProps) {
+const MzawadieProvider: React.FC<IProps> = ({ apolloConfig, config, children }: IProps) => {
     const [context, setContext] = useState<MzawadieContextType | null>(null);
     const [client, setClient] = useState<ApolloClient<any> | null>(null);
 

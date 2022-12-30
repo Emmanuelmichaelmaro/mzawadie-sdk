@@ -1,11 +1,11 @@
 // @ts-nocheck
-import { CREDENTIAL_API_EXISTS } from "../../consts";
-import { User } from "../../fragments/gqlTypes/User";
-import { ErrorListener } from "../../helpers";
+import { Config } from "../../apollo";
+import { User } from "../../apollo/fragments/gqlTypes/User";
+import { CREDENTIAL_API_EXISTS } from "../../core";
+import { MzawadieState, MzawadieStateLoaded } from "../../core/state";
+import { StateItems } from "../../core/state/types";
+import { ErrorListener } from "../../helpers/ErrorListener";
 import { JobsManager } from "../../jobs";
-import { MzawadieState, MzawadieStateLoaded } from "../../state";
-import { StateItems } from "../../state/types";
-import { Config } from "../../types";
 import { PromiseRunResponse } from "../types";
 import { DataErrorAuthTypes } from "./types";
 
@@ -52,6 +52,7 @@ export class AuthAPI extends ErrorListener {
 
     constructor(mzawadieState: MzawadieState, jobsManager: JobsManager, config: Config) {
         super();
+
         this.mzawadieState = mzawadieState;
         this.jobsManager = jobsManager;
         this.config = config;
@@ -197,6 +198,7 @@ export class AuthAPI extends ErrorListener {
             "provideUser",
             undefined
         );
+
         if (this.config.loadOnStart.checkout) {
             await this.jobsManager.run("checkout", "provideCheckout", {
                 channel: this.config.channel,

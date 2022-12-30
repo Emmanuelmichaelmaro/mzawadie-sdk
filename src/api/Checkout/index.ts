@@ -1,10 +1,11 @@
-import { PaymentGateway } from "../../fragments/gqlTypes/PaymentGateway";
+// @ts-nocheck
+import { Config } from "../../apollo";
+import { PaymentGateway } from "../../apollo/fragments/gqlTypes/PaymentGateway";
+import { MzawadieState, MzawadieStateLoaded } from "../../core/state";
+import { StateItems } from "../../core/state/types";
 import { ErrorListener } from "../../helpers";
 import { ICheckoutModel, IPaymentModel } from "../../helpers/LocalStorageHandler";
 import { JobsManager } from "../../jobs";
-import { MzawadieState, MzawadieStateLoaded } from "../../state";
-import { StateItems } from "../../state/types";
-import { Config } from "../../types";
 import { PromiseRunResponse } from "../types";
 import {
     DataErrorCheckoutTypes,

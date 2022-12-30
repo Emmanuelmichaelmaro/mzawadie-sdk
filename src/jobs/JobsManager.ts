@@ -1,5 +1,5 @@
-import { LOCAL_STORAGE_EXISTS, WINDOW_EXISTS } from "../consts";
-import { ApolloClientManager } from "../data/ApolloClientManager";
+import { ApolloClientManager } from "../apollo/ApolloClientManager";
+import { LOCAL_STORAGE_EXISTS, WINDOW_EXISTS } from "../core";
 import { LocalStorageHandler } from "../helpers/LocalStorageHandler";
 import { IJobs, Jobs } from "./Jobs";
 import { IQueuedJobs, QueuedJobs } from "./QueuedJobs";

@@ -1,10 +1,10 @@
-import { CollectionDetails as Collection } from "../../fragments/gqlTypes/CollectionDetails";
-import BaseDetails, { MapQueryData } from "../../helpers/BaseDetails";
-import { collectionDetails } from "../../queries/collections";
+import { CollectionDetails as Collection } from "../../apollo/fragments/gqlTypes/CollectionDetails";
+import { collectionDetails } from "../../apollo/queries/collections";
 import {
     CollectionDetails as CollectionDetailsQuery,
     CollectionDetailsVariables,
-} from "../../queries/gqlTypes/CollectionDetails";
+} from "../../apollo/queries/gqlTypes/CollectionDetails";
+import BaseDetails, { MapQueryData } from "../../helpers/BaseDetails";
 
 export class CollectionDetails extends BaseDetails<
     CollectionDetailsQuery,

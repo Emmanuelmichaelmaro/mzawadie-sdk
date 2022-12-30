@@ -1,11 +1,11 @@
 import {
+    Checkout_availablePaymentGateways,
     Checkout_availableShippingMethods,
     Checkout_lines_variant_attributes,
     Checkout_lines_variant_pricing,
     Checkout_lines_variant_product,
-    Checkout_availablePaymentGateways,
-} from "../../fragments/gqlTypes/Checkout";
-import { Payment_total } from "../../fragments/gqlTypes/Payment";
+} from "../../apollo/fragments/gqlTypes/Checkout";
+import { Payment_total } from "../../apollo/fragments/gqlTypes/Payment";
 import { IQueuedJobs } from "../../jobs/QueuedJobs";
 
 export enum LocalStorageItems {

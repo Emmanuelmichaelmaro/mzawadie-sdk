@@ -1,0 +1,3427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product object can filter 1`] = `
+Array [
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo1MDk=",
+    "isAvailableForPurchase": true,
+    "name": "オネスティ= Honesty / ルート・ビアー・ラグ = Root Beer Rag",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "billy-joel-billy-joel-honesty-root-beer-rag",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC0xNjYzLmpwZWc_775ad879_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjY1MTk=/512/",
+    },
+  },
+]
+`;
+
+exports[`Product object can get a details of product by id 1`] = `undefined`;
+
+exports[`Product object can get a details of product by slug 1`] = `undefined`;
+
+exports[`Product object can get a list of products 1`] = `
+Array [
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxOTY=",
+    "isAvailableForPurchase": true,
+    "name": "1970-1982",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-1970-1982",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC03ODc0LmpwZWc_7c2b4fc4_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC03ODc0LmpwZWc_7c2b4fc4_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxOTg=",
+    "isAvailableForPurchase": true,
+    "name": "ABBA Again",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 103,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 103,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 120,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 120,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 103,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 103,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 120,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 120,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-abba-again",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/My5qcGVn_45b35eb8_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/My5qcGVn_45b35eb8_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoyMDA=",
+    "isAvailableForPurchase": true,
+    "name": "ABBA - MP3",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 55,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 55,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 55,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 55,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-abba-mp3",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC0zODY2LmpwZWc_675eda8a_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC0zODY2LmpwZWc_675eda8a_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNzc=",
+    "isAvailableForPurchase": true,
+    "name": "Aniversario Los 10 Años De ABBA",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-aniversario-los-10-anos-de-abba",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NC04MTQ5LmpwZWc_12901ee0_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NC04MTQ5LmpwZWc_12901ee0_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNjY=",
+    "isAvailableForPurchase": true,
+    "name": "A Wie ABBA (Die Grössten Erfolge Von »Waterloo« Bis »Super Trouper«)",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-a-wie-abba-die-grossten-erfolge-von-waterloo-bis-super-trouper",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/LmpwZWc_963ca09d_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/LmpwZWc_963ca09d_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxODc=",
+    "isAvailableForPurchase": true,
+    "name": "Dame! Dame! Dame! / Gracias Por La Musica",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 128,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 128,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 128,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 128,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-dame-dame-dame-gracias-por-la-musica",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Mi02Mzk4LmpwZWc_75357e29_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Mi02Mzk4LmpwZWc_75357e29_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxOTI=",
+    "isAvailableForPurchase": true,
+    "name": "Dancing Special",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 113,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 113,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 113,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 113,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-dancing-special",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MS0xMDQ5LmpwZWc_38081f49_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MS0xMDQ5LmpwZWc_38081f49_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNzg=",
+    "isAvailableForPurchase": true,
+    "name": "Disco Special-2",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-disco-special-2",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Mi0yMTAxLmpwZWc_09959352_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Mi0yMTAxLmpwZWc_09959352_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNjc=",
+    "isAvailableForPurchase": true,
+    "name": "Forever Gold",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 26,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 26,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 52,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 52,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 26,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 26,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 52,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 52,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-forever-gold",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MS00MTQ3LmpwZWc_09528904_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MS00MTQ3LmpwZWc_09528904_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxODM=",
+    "isAvailableForPurchase": true,
+    "name": "Gold Christmas",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 153,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 153,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 153,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 153,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-gold-christmas",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC5qcGVn_577edebf_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC5qcGVn_577edebf_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxOTU=",
+    "isAvailableForPurchase": true,
+    "name": "Gold (Greatest Hits) - 40th Anniversary Edition",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 116,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-gold-greatest-hits-40th-anniversary-edition",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MjItOTQyMi5qcGVn_8750e005_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MjItOTQyMi5qcGVn_8750e005_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNjU=",
+    "isAvailableForPurchase": true,
+    "name": "Greatest Hits",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 80,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 80,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 105,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 105,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 80,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 80,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 105,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 105,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-greatest-hits",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/LmpwZWc_bf254ebe_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/LmpwZWc_bf254ebe_thumbnail_512.jpeg",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxODI=",
+    "isAvailableForPurchase": true,
+    "name": "Greatest Hits Vol. 2",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 63,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 63,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 158,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 158,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 63,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 63,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 158,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 158,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-greatest-hits-vol-2",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NC5qcGVn_79e65285_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ3Mjc=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxOTk=",
+    "isAvailableForPurchase": true,
+    "name": "Hits",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 137,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 137,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 137,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 137,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-hits",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NjAtNDI0My5qcGVn_ae7f06bd_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ4MDM=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxODY=",
+    "isAvailableForPurchase": true,
+    "name": "Honey-Honey",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 37,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 37,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 139,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 139,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 37,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 37,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 139,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 139,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-honey-honey",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Mi5qcGVn_ba296852_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ3Mzg=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNzk=",
+    "isAvailableForPurchase": true,
+    "name": "Hovas Vittne",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 177,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 177,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 190,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 190,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 177,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 177,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 190,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 190,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-hovas-vittne",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NS03MzI2LmpwZWc_1685beb0_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ3MDg=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNzY=",
+    "isAvailableForPurchase": true,
+    "name": "Just A Notion",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 61,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 61,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 112,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 112,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 61,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 61,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 112,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 112,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-just-a-notion",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MTMtNTYwMS5qcGVn_abe7012a_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ2OTQ=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoyMDE=",
+    "isAvailableForPurchase": true,
+    "name": "Музыкальная Коллекция (Все Хиты В Формате MP3)",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-muzykalnaya-kollekciya-vse-hity-v-formate-mp3",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/My0yNDYyLmpwZWc_9118ccd7_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ4MDk=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxODU=",
+    "isAvailableForPurchase": true,
+    "name": "On And On And On / Our Last Summer",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 88,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 88,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 130,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 130,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 88,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 88,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 130,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 130,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-on-and-on-and-on-our-last-summer",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OS05ODc4LmpwZWc_11dad236_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ3MzY=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNzE=",
+    "isAvailableForPurchase": true,
+    "name": "Oro (Grandes Exitos)",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 14,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 14,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 14,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 14,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-oro-grandes-exitos",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/My5qcGVn_fe7845b8_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ2NTE=/512/",
+    },
+  },
+]
+`;
+
+exports[`Product object can get new page 1`] = `
+Array [
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxOTY=",
+    "isAvailableForPurchase": true,
+    "name": "1970-1982",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 57,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 122,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-1970-1982",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC03ODc0LmpwZWc_7c2b4fc4_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC03ODc0LmpwZWc_7c2b4fc4_thumbnail_512.jpeg",
+    },
+  },
+]
+`;
+
+exports[`Product object can sort 1`] = `
+Array [
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo3MjY=",
+    "isAvailableForPurchase": true,
+    "name": "血、汗、涙",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 140,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "bts",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MzYtNzM0Mi5qcGVn_92ea99c9_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjc0Mzg=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo1NTA=",
+    "isAvailableForPurchase": true,
+    "name": "日本のシングル集 = Japanese Singles Collection",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 91,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 91,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 68,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 91,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 91,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "bob-dylan-bob-dylan-japanese-singles-collection",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OTctNzczMi5qcGVn_04d3b713_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjY3MzQ=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-18",
+    "id": "UHJvZHVjdDoyMTU0",
+    "isAvailableForPurchase": true,
+    "name": "愛という名の欲望 = Crazy Little Thing Called Love",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 70,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 70,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 70,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 70,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "queen-queen-crazy-little-thing-called-love",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/LTYwODAuanBlZw_055c2cdf_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjE0ODE1/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo1NDg=",
+    "isAvailableForPurchase": true,
+    "name": "コーヒーもう一杯 = One More Cup Of Coffee",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 12,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 12,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 12,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 12,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "bob-dylan-bob-dylan-one-more-cup-of-coffee",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MC5qcGVn_aa608f9a_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjY3MjY=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoyMDE=",
+    "isAvailableForPurchase": true,
+    "name": "Музыкальная Коллекция (Все Хиты В Формате MP3)",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 159,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 185,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "abba-abba-muzykalnaya-kollekciya-vse-hity-v-formate-mp3",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/My0yNDYyLmpwZWc_9118ccd7_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjQ4MDk=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-18",
+    "id": "UHJvZHVjdDoyNjAw",
+    "isAvailableForPurchase": true,
+    "name": "Легенды Зарубежного Рока",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 15,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 15,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 15,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 15,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 111,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "u2-u2-legendy-zarubezhnogo-roka",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NC0xNTg2LmpwZWc_93f07605_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjE3MTE2/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo1MTk=",
+    "isAvailableForPurchase": true,
+    "name": "Концерт",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 58,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 154,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "billy-joel-billy-joel-koncert",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Ny05NTA2LmpwZWc_a39df9f5_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjY1NTg=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo4Nzc=",
+    "isAvailableForPurchase": true,
+    "name": "До Того, Как Ты Скажешь Мне",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 59,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 59,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 146,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 146,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 59,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 59,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 146,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 146,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "creedence-clearwater-revival-kridens-do-togo-kak-ty-skazhesh-mne",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Mi0xMTQwLmpwZWc_e968accf_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjgyMjI=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-18",
+    "id": "UHJvZHVjdDoyNTc0",
+    "isAvailableForPurchase": true,
+    "name": "Zootopia",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 141,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 141,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 141,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 141,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 174,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "u2-u2-zootopia",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Ny01NzczLmpwZWc_1a1b4bbf_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjE3MDE5/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-18",
+    "id": "UHJvZHVjdDoyMTcz",
+    "isAvailableForPurchase": true,
+    "name": "Zoom",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 16,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 16,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 16,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 16,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "queen-queen-zoom",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Ni5qcGVn_d5c42254_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjE0OTE0/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-18",
+    "id": "UHJvZHVjdDoyNTE1",
+    "isAvailableForPurchase": true,
+    "name": "ZEZE",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 53,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 53,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 13,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 53,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 53,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "travis-scott-kodak-black-feat-travis-scott-2-and-offset-10-zeze",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NzAtNjUzMi5qcGVn_25b3596a_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjE2NTA4/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNjQ3",
+    "isAvailableForPurchase": true,
+    "name": "ZEZE",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 121,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 121,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 114,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 121,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 121,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "kodak-black-kodak-black-feat-travis-scott-2-and-offset-10-zeze",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NzAtNjUzMi5qcGVn_6147189c_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjExODUy/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNDgx",
+    "isAvailableForPurchase": true,
+    "name": " Zero (From the Original Motion Picture \\"Ralph Breaks The Internet\\")",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 40,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 40,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 75,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 75,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 40,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 40,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 75,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 75,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "imagine-dragons-imagine-dragons-zero-from-the-original-motion-picture-ralph-breaks-the-internet",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NTUtNTcyNS5qcGVn_02b2e394_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjEwOTQx/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxMzg4",
+    "isAvailableForPurchase": true,
+    "name": "ZABA",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 24,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 24,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 24,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 24,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 132,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "glass-animals-glass-animals-zaba",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OC02NzYxLmpwZWc_fdce06b2_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjEwNTY5/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-18",
+    "id": "UHJvZHVjdDoyMzcz",
+    "isAvailableForPurchase": true,
+    "name": "Z",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 62,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 62,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 30,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 62,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 62,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "sza-sza-2-z",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/OS05MTg4LmpwZWc_429adac3_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjE1Nzk4/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxNTM2",
+    "isAvailableForPurchase": true,
+    "name": "Yummy",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 46,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 46,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 175,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 175,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 46,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 46,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 175,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 175,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "justin-bieber-justin-bieber-yummy",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NzEtNDgwNi5qcGVn_585eb742_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjExMTYx/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxMjU2",
+    "isAvailableForPurchase": true,
+    "name": "You've Got The Love",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 150,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 168,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "florence-the-machine-florence-the-machine-youve-got-the-love",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Mi5qcGVn_4cc2759c_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjEwMDM3/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDoxMjc0",
+    "isAvailableForPurchase": true,
+    "name": "Youth Conspiration",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 198,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 198,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 173,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 198,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 198,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "future-future-27-youth-conspiration",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/NC05NDk2LmpwZWc_44096896_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjEwMTA2/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo3MDE=",
+    "isAvailableForPurchase": true,
+    "name": "Youth",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 89,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 89,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 167,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 167,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 89,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 89,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 167,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 167,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "bts-bts-4-youth",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/Ny05NTI1LmpwZWc_936afff7_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjczMzU=/512/",
+    },
+  },
+  Object {
+    "__typename": "Product",
+    "availableForPurchase": "2022-08-17",
+    "id": "UHJvZHVjdDo0OTg=",
+    "isAvailableForPurchase": true,
+    "name": "You Should See Me In A Crown / Bitches Broken Hearts",
+    "pricing": Object {
+      "__typename": "ProductPricingInfo",
+      "onSale": false,
+      "priceRange": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 74,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 74,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 119,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 119,
+            "currency": "USD",
+          },
+        },
+      },
+      "priceRangeUndiscounted": Object {
+        "__typename": "TaxedMoneyRange",
+        "start": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 74,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 74,
+            "currency": "USD",
+          },
+        },
+        "stop": Object {
+          "__typename": "TaxedMoney",
+          "gross": Object {
+            "__typename": "Money",
+            "amount": 119,
+            "currency": "USD",
+          },
+          "net": Object {
+            "__typename": "Money",
+            "amount": 119,
+            "currency": "USD",
+          },
+        },
+      },
+    },
+    "seoDescription": null,
+    "seoTitle": null,
+    "slug": "billie-eilish-billie-eilish-you-should-see-me-in-a-crown-bitches-broken-hearts",
+    "thumbnail": Object {
+      "__typename": "Image",
+      "alt": "",
+      "url": "https://demo.saleor.io/media/thumbnails/products/MTYtNDE3NC5qcGVn_3f159247_thumbnail_256.jpeg",
+    },
+    "thumbnail2x": Object {
+      "__typename": "Image",
+      "url": "http://demo.saleor.io/thumbnail/UHJvZHVjdE1lZGlhOjY0ODM=/512/",
+    },
+  },
+]
+`;

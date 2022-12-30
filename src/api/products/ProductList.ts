@@ -1,10 +1,10 @@
-import BaseList, { GetPageInfo, GetTotalCount, MapQueryData } from "../../helpers/BaseList";
 import {
     ProductList as ProductListQuery,
     ProductListVariables,
     ProductList_products_edges_node,
-} from "../../queries/gqlTypes/ProductList";
-import { productList } from "../../queries/products";
+} from "../../apollo/queries/gqlTypes/ProductList";
+import { productList } from "../../apollo/queries/products";
+import BaseList, { GetPageInfo, GetTotalCount, MapQueryData } from "../../helpers/BaseList";
 
 export class ProductList extends BaseList<
     ProductListQuery,

@@ -1,9 +1,9 @@
 module.exports = {
     client: {
-        includes: ["./src/queries/*.ts", "./src/mutations/*.ts", "./src/fragments/*.ts"],
+        includes: ["./src/apollo/**/*.ts"],
         service: {
             name: "mzawadie",
-            localSchemaFile: "schema.graphql",
+            localSchemaFile: ["schema.graphql", "local-schema.graphql"],
             // url: "http://localhost:8000/graphql/"
         },
     },

@@ -1,5 +1,5 @@
-import { Checkout_availableShippingMethods } from "../../fragments/gqlTypes/Checkout";
-import { Payment_total } from "../../fragments/gqlTypes/Payment";
+import { Checkout_availableShippingMethods } from "../../apollo/fragments/gqlTypes/Checkout";
+import { Payment_total } from "../../apollo/fragments/gqlTypes/Payment";
 import {
     ICheckoutModelPrice,
     ICheckoutModelPriceValue,
